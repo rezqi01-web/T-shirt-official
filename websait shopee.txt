@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Outfit ID</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1f1f1f;
+      --accent: #f472b6;
+      --bg: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--primary);
+      padding: 1rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-body p {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #ec4899;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Daily Outfit ID</h1>
+    <p>Rekomendasi outfit harian minimalis & kekinian</p>
+  </header>
+
+  <section class="grid">
+    <!-- Outfit Card 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x400?text=Outfit+1" alt="Outfit 1" />
+      <div class="card-body">
+        <h3>Outfit Kasual Wanita</h3>
+        <p>Cocok untuk hangout & kuliah</p>
+        <a href="https://shopee.co.id" class="btn" target="_blank">Lihat Produk</a>
+      </div>
+    </div>
+
+    <!-- Outfit Card 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x400?text=Outfit+2" alt="Outfit 2" />
+      <div class="card-body">
+        <h3>Streetwear Pria</h3>
+        <p>Stylish dan comfy untuk aktivitas outdoor</p>
+        <a href="https://wa.me/6281234567890" class="btn" target="_blank">Beli via WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Tambahkan lebih banyak outfit card di sini -->
+  </section>
+
+  <footer>
+    &copy; 2025 Daily Outfit ID. All rights reserved.
+  </footer>
+</body>
+</html>
